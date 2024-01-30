@@ -48,6 +48,12 @@ install -D -m 755 _kmod_build_${kernel_version%%___*}/bmi323_i2c.ko %{buildroot}
  chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmi323_i2c.ko
 install -D -m 755 _kmod_build_${kernel_version%%___*}/bmi323_spi.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
  chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmi323_spi.ko
+install -D -m 755 _kmod_build_${kernel_version%%___*}/bmc150-accel-core.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
+ chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmc150-accel-core.ko
+install -D -m 755 _kmod_build_${kernel_version%%___*}/bmc150-accel-i2c.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
+ chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmc150-accel-i2c.ko
+install -D -m 755 _kmod_build_${kernel_version%%___*}/bmc150-accel-spi.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
+ chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmc150-accel-spi.ko
 done
 %{?akmod_install}
 
