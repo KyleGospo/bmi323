@@ -46,6 +46,8 @@ for kernel_version in %{?kernel_versions}; do
  chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmi323_core.ko
 install -D -m 755 _kmod_build_${kernel_version%%___*}/bmi323_i2c.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
  chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmi323_i2c.ko
+install -D -m 755 _kmod_build_${kernel_version%%___*}/bmi323_spi.ko %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/
+ chmod a+x %{buildroot}%{kmodinstdir_prefix}/${kernel_version%%___*}/%{kmodinstdir_postfix}/bmi323_spi.ko
 done
 %{?akmod_install}
 
