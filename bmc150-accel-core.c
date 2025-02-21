@@ -1902,7 +1902,7 @@ const struct dev_pm_ops bmc150_accel_pm_ops = {
 	SET_RUNTIME_PM_OPS(bmc150_accel_runtime_suspend,
 			   bmc150_accel_runtime_resume, NULL)
 };
-EXPORT_SYMBOL_NS_GPL(bmc150_accel_pm_ops, IIO_BMC150);
+EXPORT_SYMBOL_NS_GPL(bmc150_accel_pm_ops, "IIO_BMC150");
 
 MODULE_AUTHOR("Srinivas Pandruvada <srinivas.pandruvada@linux.intel.com>");
 MODULE_LICENSE("GPL v2");

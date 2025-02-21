@@ -2136,7 +2136,7 @@ int bmi323_core_probe(struct device *dev)
 
 	return 0;
 }
-EXPORT_SYMBOL_NS_GPL(bmi323_core_probe, IIO_BMI323);
+EXPORT_SYMBOL_NS_GPL(bmi323_core_probe, "IIO_BMI323");
 
 MODULE_DESCRIPTION("Bosch BMI323 IMU driver");
 MODULE_AUTHOR("Jagath Jog J <jagathjog1996@gmail.com>");
